@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GhostSweep History - Privacy for Chrome</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #111; color: #fff; text-align: center; padding: 50px 20px; line-height: 1.6; }
+        .container { max-width: 800px; margin: 0 auto; }
+        h1 { font-size: 3rem; margin-bottom: 10px; color: #a29bfe; } /* Ghost Purple */
+        p { font-size: 1.2rem; color: #ccc; }
+        .btn { display: inline-block; background: #6c5ce7; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 20px; transition: 0.2s; }
+        .btn:hover { background: #a29bfe; }
+        .features { text-align: left; margin-top: 50px; background: #222; padding: 30px; border-radius: 10px; }
+        .footer { margin-top: 50px; font-size: 0.9rem; color: #777; }
+        a { color: #a29bfe; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>👻 GhostSweep History</h1>
+        <p>The "Incognito Mode" for your normal browser tabs.</p>
+        
+        <a href="#" class="btn">Download for Chrome</a>
+
+        <div class="features">
+            <h3>Why GhostSweep?</h3>
+            <ul>
+                <li><strong>Auto-Delete:</strong> Instantly scrubs sensitive URLs the moment you visit them.</li>
+                <li><strong>Panic Button:</strong> Clean your recent history in one click.</li>
+                <li><strong>Local Privacy:</strong> Your data never leaves your device.</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 GhostSweep History. <a href="privacy.html">Privacy Policy</a></p>
+        </div>
+    </div>
+</body>
+</html>
