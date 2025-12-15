@@ -5,21 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GhostSweep History - Privacy for Chrome</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #111; color: #fff; text-align: center; padding: 50px 20px; line-height: 1.6; }
-        .container { max-width: 800px; margin: 0 auto; }
-        h1 { font-size: 3rem; margin-bottom: 10px; color: #a29bfe; } /* Ghost Purple */
-        p { font-size: 1.2rem; color: #ccc; }
-        .btn { display: inline-block; background: #6c5ce7; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 20px; transition: 0.2s; }
-        .btn:hover { background: #a29bfe; }
-        .features { text-align: left; margin-top: 50px; background: #222; padding: 30px; border-radius: 10px; }
-        .footer { margin-top: 50px; font-size: 0.9rem; color: #777; }
-        a { color: #a29bfe; }
+        /* Reset and Base Styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            /* White background fading into the brand blue at the bottom */
+            background: linear-gradient(to bottom, #ffffff 0%, #ffffff 60%, #52d5e7 100%);
+            color: #333; /* Dark text for contrast on white */
+            line-height: 1.6;
+            min-height: 100vh; /* Ensure gradient stretches full height */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 40px auto;
+            text-align: center;
+            flex: 1; /* Pushes footer down */
+        }
+
+        /* Banner Image Styling */
+        .banner-img {
+            width: 100%;
+            max-width: 800px; /* Prevents it from getting uncomfortably huge on big screens */
+            height: auto;
+            display: block;
+            margin: 0 auto 30px auto; /* Center horizontally, margin bottom */
+            border-radius: 12px; /* Optional: slight rounding of corners */
+             /* Optional: subtle shadow to make it pop off the white background */
+            box-shadow: 0 10px 25px rgba(82, 213, 231, 0.15);
+        }
+
+        /* Button Styling */
+        .btn {
+            display: inline-block;
+            background: #52d5e7; /* Your brand blue */
+            color: white;
+            padding: 18px 36px;
+            text-decoration: none;
+            border-radius: 50px; /* rounded pill shape */
+            font-weight: 800;
+            font-size: 1.1rem;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 15px rgba(82, 213, 231, 0.4); /* nice glowing shadow */
+        }
+
+        .btn:hover {
+            transform: translateY(-2px); /* slight lift effect */
+            box-shadow: 0 8px 20px rgba(82, 213, 231, 0.6);
+            filter: brightness(1.05); /* slightly brighter on hover */
+        }
+
+        /* Features Box Redesign */
+        .features {
+            text-align: left;
+            margin-top: 60px;
+            background: #ffffff; /* Clean white card background */
+            padding: 40px;
+            border-radius: 16px;
+            /* A subtle border using your brand color */
+            border: 2px solid #52d5e7;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        .features h3 {
+            margin-bottom: 20px;
+            color: #52d5e7; /* Brand color headline */
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .features ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .features li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        /* Custom checkmark bullet points using brand color */
+        .features li::before {
+            content: '✓';
+            color: #52d5e7;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: auto; /* Pushes to bottom of flex container */
+            padding: 40px 20px;
+            font-size: 0.9rem;
+            color: #fff; /* White text to sit on the blue gradient bottom */
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: underline;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>👻 GhostSweep History</h1>
-        <p>The "Incognito Mode" for your normal browser tabs.</p>
+        <img src="GhostSweep_Banner.png" alt="GhostSweep History Banner" class="banner-img">
         
         <a href="#" class="btn">Download for Chrome</a>
 
@@ -31,10 +130,10 @@
                 <li><strong>Local Privacy:</strong> Your data never leaves your device.</li>
             </ul>
         </div>
+    </div>
 
-        <div class="footer">
-            <p>&copy; 2025 GhostSweep History. <a href="privacy.html">Privacy Policy</a></p>
-        </div>
+    <div class="footer">
+        <p>&copy; 2025 GhostSweep History. <a href="privacy.html">Privacy Policy</a></p>
     </div>
 </body>
 </html>
