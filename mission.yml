@@ -1,0 +1,14 @@
+name: POOF
+codename: null
+tier: experiment
+status: paused
+completion: 25
+stack: Browser extension
+role: Privacy safety net — selectively scrubs browser history while keeping logins/work safe
+next_action: Refactor pass with Claude review, then rename GitHub repo ghostsweep-history → poof
+effort: sprint
+blocker: Awaiting refactor
+waiting_on: null
+notes: Published as POOF! Repo still named ghostsweep-history pending rename. Refactor task queued separately.
+github: https://github.com/modafoca/ghostsweep-history
+updated: 2026-05-06
